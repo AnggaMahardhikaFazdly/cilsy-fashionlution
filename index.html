@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Small Project 1 Fullstack</title>
+</head>
+
+<body>
+    <div class="background-page1">
+        <div id="main-page">
+            <div class="tagline">
+                <div class="header">
+                    <h4>Choose <b>as you want</b></h4>
+                    <h4>Pay <b>as you can</b></h4>
+                </div>
+                <div class="header-update">
+                    <p>latest all</p>
+                </div>
+            </div>
+            <div class="tag-item1">
+                <div id="button-shop">
+                    <button><a href="#product">shop now</a></button>
+                </div>
+                <div class="tagline-item">
+                    <p><b>New Concept</b> of Online Shopping</p>
+                </div>
+            </div>
+            <div class="tag-item2">
+                <div class="tagline-item1"></div>
+                <div class="tagline-item2">
+                    <p>Lorem Ipsum will go here. Lorem Ipsum will go here. Lorem Ipsum will go here. Lorem Ipsum will go
+                        here.
+                    </p>
+                </div>
+            </div>
+            <div class="info-box">
+                <div>
+                    <p class="info">keynotes</p>
+                    <p class="info-sub">subtitle</p>
+                </div>
+                <div>
+                    <p class="info">activities</p>
+                    <p class="info-sub">subtitle</p>
+                </div>
+                <div>
+                    <p class="info">gallery</p>
+                    <p class="info-sub">subtitle</p>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <hr>
+
+    </div>
+
+    <div class="footer">
+        <ul id="symbol-1">
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+        </ul>
+        <ul id="symbol-2">
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+        </ul>
+        <ul id="symbol-3">
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <div class="background-page2">
+        <div id="product">
+            <div class="shopping-cart">
+                <a><i class="fa fa-shopping-cart popup" onclick="popupCart()">
+                        <div class="order-summary popuptext" id="popup">
+                            <h4>order summary</h4>
+
+                            <br>
+
+                            <p class="promo ">do you have a promo code?</p>
+
+                            <form>
+                                <input type="text" placeholder="" name="promocode">
+                                <button type="apply">apply</button>
+                            </form>
+                            <div class="item-fee">
+                                <div class="fee1">
+                                    <p class="subtotal">sub total</p>
+                                    <p>$19.99</p>
+                                </div>
+                                <div class="fee2">
+                                    <p class="shippingfee">shipping fee</p>
+                                    <p>free</p>
+                                </div>
+                                <div class="fee3">
+                                    <p class="tax">tax</p>
+                                    <p>free</p>
+                                </div>
+
+                                <br>
+
+                                <div class="finalfee">
+                                    <p class="ordertotal">order total</p>
+                                    <p>$19.99</p>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <button class="checkout" type="checkout">checkout</button>
+
+                            <br>
+
+                            </form>
+                        </div>
+                    </i>
+                </a>
+            </div>
+
+            <div>
+                <a class="go-back" href="#main-page"><b>go back</b></a>
+            </div>
+
+            <div class="product-item">
+                <div class="product-image">
+                    <div class="slides fade img1">
+                        <a href="#shop"><img src="./images/product-1.png" alt="Product-1"></a>
+                    </div>
+                    <div class="slides fade img2">
+                        <a href="#shop"><img src="./images/product-1.png" alt="Product-1"></a>
+                    </div>
+                    <div class="slides fade img3">
+                        <a href="#shop"><img src="./images/product-1.png" alt="Product-1"></a>
+                    </div>
+                    <a class="previous" onclick="buttonSlides(-1)">&#8249;</a>
+                    <a class="next" onclick="buttonSlides(1)">&#8250;</a>
+                </div>
+                <div class="product-content">
+                    <div class="product-title">
+                        <p>Color</p>
+                        <p><b>Item Type / Name</b></p>
+                    </div>
+
+                    <br>
+
+                    <div class="product-price">
+                        <p class="price"><b>&#36;19.99</b></p>
+                        <p class="price-del"><del>&#36;39.99</del></p>
+                    </div>
+
+                    <br>
+
+                    <div class="product-info">
+                        <p class="product-description">Kacamata tampan dan berani</p>
+
+                        <br>
+
+                        <p class="product-description">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an
+                            unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+
+                        <br>
+
+                        <p class="product-size">size:</p>
+                        <div id="dropdown" class="dropdown">
+                            <button id="dropdown-btn" onclick="dropDown()" class="dropbtn"><b>Medium</b>
+                                &#9662;</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a class="dropdown-item" href="#small">small</a>
+                                <a class="dropdown-item" href="#medium">medium</a>
+                                <a class="dropdown-item" href="#large">large</a>
+                            </div>
+                        </div>
+
+                        <br><br><br>
+
+                        <div class="product-btn">
+                            <button>add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="product-info-add">
+                    <p>mens</p>
+                    <p>100% cotton</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <hr>
+
+    </div>
+
+    <div class="footer">
+        <ul id="symbol-1">
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+        </ul>
+        <ul id="symbol-2">
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+        </ul>
+        <ul id="symbol-3">
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <div id="shop">
+        <div class="navbar-shop">
+            <div class="shop-name">
+                <p>your shop name</p>
+            </div>
+            <div class="search-holder">
+                <form>
+                    <input class="holder" type="text" placeholder="product" name="search">
+                    <button class="search" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div class="shopping-cart">
+                <a><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="shop-menu">
+            <div class="category">
+                <a href="#">featured</a>
+                <a class="category-bolder" href="#"><b>category 1</b></a>
+                <a href="#">category 2</a>
+                <a href="#">category 3</a>
+                <a href="#">category 4</a>
+                <a href="#">category 6</a>
+            </div>
+            <div class="product-category">
+                <div>
+                    <p class="title-inbox">title here</p>
+                    <p class="category-inbox">category</p>
+                </div>
+                <div>
+                    <p class="title-inbox">title here</p>
+                    <p class="category-inbox">category</p>
+                </div>
+                <div>
+                    <p class="title-inbox">title here</p>
+                    <p class="category-inbox">category</p>
+                </div>
+                <div>
+                    <p class="title-inbox">title here</p>
+                    <p class="category-inbox">category</p>
+                </div>
+                <div>
+                    <p class="title-inbox">title here</p>
+                    <p class="category-inbox">category</p>
+                </div>
+                <div>
+                    <p class="title-inbox">title here</p>
+                    <p class="category-inbox">category</p>
+                </div>
+                <div>
+                    <p class="title-inbox">title here</p>
+                    <p class="category-inbox">category</p>
+                </div>
+                <div>
+                    <p class="title-inbox">title here</p>
+                    <p class="category-inbox">category</p>
+                </div>
+                <div>
+                    <p class="title-inbox">title here</p>
+                    <p class="category-inbox">category</p>
+                </div>
+            </div>
+            <div class="filter">
+                <a href="#">all</a>
+                <a class="filter-bolder" href="#"><b>filter 1</b></a>
+                <a href="#">filter 2</a>
+                <a href="#">filter 3</a>
+                <a href="#">filter 4</a>
+                <a href="#">filter 5</a>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="pagination">
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="footer">
+        <ul id="symbol-1">
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+        </ul>
+        <ul id="symbol-2">
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+        </ul>
+        <ul id="symbol-3">
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+            <li>&#9632;</li>
+        </ul>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
